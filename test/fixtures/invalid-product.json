@@ -1,0 +1,16 @@
+{
+  "categories": [
+    { "id": "kitchen", "name": "Kitchen", "description": "Cookware and utensils." }
+  ],
+  "products": [
+    {
+      "id": "broken-kettle",
+      "name": "Broken Kettle",
+      "categoryId": "kitchen",
+      "priceCents": -500,
+      "currency": "USD",
+      "description": "Has a negative price, which the product schema forbids.",
+      "inStock": true
+    }
+  ]
+}

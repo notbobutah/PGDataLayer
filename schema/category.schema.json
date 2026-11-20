@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/notbobutah/PGDataLayer/schema/category.schema.json",
+  "title": "Category",
+  "description": "A product category in the faux catalog.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name"],
+  "properties": {
+    "id": {
+      "description": "Stable slug identifier.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "description": "Display name.",
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "description": "Short description of the category.",
+      "type": "string"
+    }
+  }
+}

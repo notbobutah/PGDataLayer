@@ -1,0 +1,7 @@
+[
+  { "id": "kitchen", "name": "Kitchen", "description": "Cookware, utensils and everyday kitchen helpers." },
+  { "id": "outdoors", "name": "Outdoors", "description": "Gear for camping, hiking and backyard afternoons." },
+  { "id": "office", "name": "Office", "description": "Desk essentials for getting things done." },
+  { "id": "home-decor", "name": "Home Decor", "description": "Small touches that make a room feel finished." },
+  { "id": "toys-games", "name": "Toys & Games", "description": "Playthings for all ages." }
+]
