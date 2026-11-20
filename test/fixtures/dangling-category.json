@@ -1,0 +1,25 @@
+{
+  "categories": [
+    { "id": "kitchen", "name": "Kitchen", "description": "Cookware and utensils." }
+  ],
+  "products": [
+    {
+      "id": "enamel-mug",
+      "name": "Enamel Mug",
+      "categoryId": "kitchen",
+      "priceCents": 1299,
+      "currency": "USD",
+      "description": "A speckled enamel camp mug.",
+      "inStock": true
+    },
+    {
+      "id": "ghost-lamp",
+      "name": "Ghost Lamp",
+      "categoryId": "no-such-category",
+      "priceCents": 4500,
+      "currency": "USD",
+      "description": "A lamp whose category does not exist.",
+      "inStock": false
+    }
+  ]
+}

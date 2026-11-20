@@ -4,7 +4,9 @@
   "description": "Faux catalog data and JSON Schemas, consumed as an npm package installed from GitHub at a full commit SHA.",
   "type": "module",
   "license": "MIT",
-  "engines": { "node": ">=24" },
+  "engines": {
+    "node": ">=24"
+  },
   "exports": {
     "./data/*": "./data/*",
     "./schema/*": "./schema/*",
@@ -12,5 +14,10 @@
   },
   "scripts": {
     "test": "node --test"
+  },
+  "devDependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "json-schema-to-typescript": "^16.0.0"
   }
 }
