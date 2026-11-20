@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/notbobutah/PGDataLayer/schema/product.schema.json",
+  "title": "Product",
+  "description": "A product in the faux catalog.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "categoryId", "priceCents", "currency", "description", "inStock"],
+  "properties": {
+    "id": {
+      "description": "Stable slug identifier.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "description": "Display name.",
+      "type": "string",
+      "minLength": 1
+    },
+    "categoryId": {
+      "description": "Id of the Category this product belongs to.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "priceCents": {
+      "description": "Price in US cents.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "currency": {
+      "description": "ISO 4217 currency code. Only USD is supported.",
+      "type": "string",
+      "const": "USD"
+    },
+    "description": {
+      "description": "Short product description.",
+      "type": "string"
+    },
+    "inStock": {
+      "description": "Whether the product is currently in stock.",
+      "type": "boolean"
+    }
+  }
+}

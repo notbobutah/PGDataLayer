@@ -7,13 +7,24 @@
   "engines": {
     "node": ">=24"
   },
+  "types": "./index.d.ts",
   "exports": {
+    ".": {
+      "types": "./index.d.ts"
+    },
     "./data/*": "./data/*",
     "./schema/*": "./schema/*",
     "./package.json": "./package.json"
   },
+  "files": [
+    "data",
+    "schema",
+    "index.d.ts"
+  ],
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "check": "node scripts/validate.mjs && node scripts/check-types.mjs",
+    "gen:types": "node scripts/gen-types.mjs"
   },
   "devDependencies": {
     "ajv": "^8.20.0",
