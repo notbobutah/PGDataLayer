@@ -1,0 +1,16 @@
+{
+  "name": "pgdatalayer",
+  "version": "0.1.0",
+  "description": "Faux catalog data and JSON Schemas, consumed as an npm package installed from GitHub at a full commit SHA.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=24" },
+  "exports": {
+    "./data/*": "./data/*",
+    "./schema/*": "./schema/*",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}

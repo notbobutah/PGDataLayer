@@ -1,0 +1,17 @@
+apiVersion: agentic-pipeline/v1
+team: demo
+
+projects:
+  - id: data
+    path: .
+
+agentDevelopment:
+  enabled: true
+  components: [data]
+  innerLoop:
+    test: npm test
+    check: npm run check --if-present
+  forbiddenPaths: [".github/**", ".agentic/**"]
+
+checks:                      # CI check name → affected project (used by the Feedback Router)
+  pgdatalayer: data
